@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sreyas C S | Creative Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b1020;color:#edf2ff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{min-height:100vh;padding:28px 8%;background:
+radial-gradient(circle at 85% 20%,#6d28d9 0,transparent 28%),
+radial-gradient(circle at 15% 80%,#0ea5e9 0,transparent 25%),#0b1020}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1150px;margin:auto}
+.logo{font-size:1.4rem;font-weight:800;letter-spacing:2px}
+.logo span{color:#38bdf8}
+.navlinks{display:flex;gap:25px;color:#b9c3dc;font-size:.95rem}
+.navlinks a:hover{color:#38bdf8}
+.hero{max-width:1150px;margin:130px auto 0;display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center}
+.badge{display:inline-block;border:1px solid #334155;border-radius:30px;padding:7px 15px;color:#7dd3fc;font-size:.85rem;margin-bottom:20px}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.95;letter-spacing:-4px}
+h1 span{color:#38bdf8}
+.hero-text{color:#b9c3dc;font-size:1.1rem;max-width:650px;margin-top:25px}
+.cta{display:inline-block;margin-top:30px;background:#38bdf8;color:#07111f;padding:13px 22px;border-radius:8px;font-weight:700}
+.cta:hover{background:#7dd3fc}
+.profile-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:30px;backdrop-filter:blur(12px);transform:rotate(2deg)}
+.avatar{height:220px;border-radius:18px;background:linear-gradient(135deg,#38bdf8,#7c3aed);display:flex;align-items:center;justify-content:center;font-size:5rem;font-weight:900;color:white}
+.profile-card h3{margin-top:20px;font-size:1.4rem}
+.profile-card p{color:#aebbd4;margin-top:7px}
+section{padding:90px 8%;max-width:1250px;margin:auto}
+.section-label{color:#38bdf8;text-transform:uppercase;letter-spacing:3px;font-size:.75rem;font-weight:bold;margin-bottom:10px}
+h2{font-size:2.5rem;margin-bottom:35px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.panel{background:#11182d;border:1px solid #202c49;border-radius:18px;padding:28px}
+.panel p{color:#b9c3dc}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fact{background:#17213a;padding:18px;border-radius:12px}
+.fact strong{display:block;color:#38bdf8;font-size:1.4rem}
+.fact small{color:#aebbd4}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{padding:12px 18px;border:1px solid #334155;border-radius:50px;color:#dbeafe;background:#11182d}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project{min-height:260px;padding:25px;border-radius:18px;background:#11182d;border:1px solid #202c49;display:flex;flex-direction:column;justify-content:space-between}
+.project:nth-child(2){background:#15122b}
+.project:nth-child(3){background:#0d2027}
+.project-number{font-size:2.5rem;color:#38bdf8;font-weight:800}
+.project h3{font-size:1.35rem;margin:15px 0 8px}
+.project p{color:#aebbd4}
+.project a{color:#7dd3fc;margin-top:20px;font-weight:bold}
+.timeline{border-left:2px solid #334155;padding-left:25px}
+.timeline-item{position:relative;margin-bottom:28px}
+.timeline-item:before{content:"";width:11px;height:11px;background:#38bdf8;border-radius:50%;position:absolute;left:-32px;top:8px}
+.timeline-item h3{margin-bottom:4px}
+.timeline-item p{color:#aebbd4}
+.contact{background:linear-gradient(135deg,#17213a,#11182d);border:1px solid #263452;border-radius:22px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.contact p{color:#b9c3dc}
+footer{text-align:center;padding:30px;color:#8190ad;border-top:1px solid #1e293b}
+@media(max-width:800px){
+.navlinks{gap:10px}.hero,.about-grid{grid-template-columns:1fr}.hero{margin-top:80px}
+.profile-card{transform:none}.projects{grid-template-columns:1fr}.contact{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:520px){.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+
+<header id="home">
+<nav>
+  <div class="logo">SREYAS<span>.</span></div>
+  <div class="navlinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="badge">STUDENT • CREATOR • LEARNER</div>
+    <h1>Sreyas<br><span>C S</span></h1>
+    <p class="hero-text">
+      Welcome to my digital space. I am a student who enjoys technology,
+      creativity and learning through practical projects.
+    </p>
+    <a class="cta" href="#work">Explore My Work ↓</a>
+  </div>
+
+  <div class="profile-card">
+    <div class="avatar">SCS</div>
+    <h3>Curious Mind</h3>
+    <p>Exploring ideas, building skills and turning concepts into useful digital projects.</p>
+  </div>
+</div>
+</header>
+
+<section id="about">
+  <div class="section-label">01 — About</div>
+  <h2>A little about me</h2>
+  <div class="about-grid">
+    <div class="panel">
+      <p>
+        I am Sreyas C S, a student with an interest in computers and modern
+        technology. I enjoy discovering how websites and software work and
+        improving my skills by creating practical projects. I believe that
+        consistent learning, experimentation and teamwork are important for
+        personal and professional growth.
+      </p>
+    </div>
+    <div class="facts">
+      <div class="fact"><strong>01</strong><small>Creative thinking</small></div>
+      <div class="fact"><strong>02</strong><small>Problem solving</small></div>
+      <div class="fact"><strong>03</strong><small>Teamwork</small></div>
+      <div class="fact"><strong>04</strong><small>Continuous learning</small></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">02 — Skills</div>
+  <h2>Things I'm learning</h2>
+  <div class="skills">
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">Python</span>
+    <span class="skill">Database Basics</span>
+    <span class="skill">Presentation Design</span>
+    <span class="skill">Communication</span>
+    <span class="skill">Problem Solving</span>
+    <span class="skill">Teamwork</span>
+  </div>
+</section>
+
+<section id="work">
+  <div class="section-label">03 — Selected Work</div>
+  <h2>Projects & ideas</h2>
+  <div class="projects">
+    <article class="project">
+      <div>
+        <div class="project-number">01</div>
+        <h3>Personal Website</h3>
+        <p>A responsive portfolio website designed to introduce a student and showcase skills.</p>
+      </div>
+      <a href="#contact">View concept →</a>
+    </article>
+    <article class="project">
+      <div>
+        <div class="project-number">02</div>
+        <h3>Quiz Project</h3>
+        <p>An interactive educational quiz concept combining questions, choices and scoring.</p>
+      </div>
+      <a href="#contact">View concept →</a>
+    </article>
+    <article class="project">
+      <div>
+        <div class="project-number">03</div>
+        <h3>Tech Presentation</h3>
+        <p>A student presentation project focused on explaining technology in a simple way.</p>
+      </div>
+      <a href="#contact">View concept →</a>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Journey</div>
+  <h2>My learning path</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>School Education</h3>
+      <p>Built a foundation in mathematics, science, communication and computer studies.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Exploring Technology</h3>
+      <p>Started developing an interest in programming, web development and digital tools.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Building Projects</h3>
+      <p>Applying classroom knowledge through presentations, websites and small practical projects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <div>
+      <div class="section-label">05 — Contact</div>
+      <h2>Let's connect.</h2>
+      <p>This portfolio is a starting point. Add your email, social links or project links here.</p>
+    </div>
+    <a class="cta" href="mailto:your-email@example.com">Email Me</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Sreyas C S · Student Portfolio</p>
+</footer>
+
+</body>
+</html>
